@@ -1,0 +1,101 @@
+% Mantido pelo colegiado do curso de Bacharelado em Sistemas de informação do Centro Universitário Católica de Santa Catarina
+% {juliano.marcelino,rodrigo.gregori}@catolicasc.org.br
+% Este arquivo pode ser redistribuído e/ou modificado sobre a licença pública GNU versão 2.
+
+\mode<presentation>
+
+% Requisitos
+\RequirePackage{tikz}
+
+% Configurações
+%\useinnertheme{catolicasc}
+%\useoutertheme{catolicasc}
+%\usecolortheme{catolicasc}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Interno
+
+% Slide de título
+\defbeamertemplate*{title page}{catolicasc}[1][]
+{ 
+   \vskip0.75cm%
+    \begin{beamercolorbox}[wd=\paperwidth,sep=8pt,#1]{title page header}
+      \usebeamerfont{title}\centerline{\inserttitle}\par%
+      \vskip1mm
+      \usebeamerfont{subtitle} \centering \insertsubtitle \par
+    \end{beamercolorbox}%
+    \vskip5cm%
+    \begin{beamercolorbox}[wd=\paperwidth,#1]{author}
+      \usebeamerfont{author}\centerline{\insertauthor}%
+    \end{beamercolorbox}
+     \vskip0.2cm%
+    \begin{beamercolorbox}[wd=\paperwidth,#1]{date}
+      \usebeamerfont{author}\centerline{\insertdate}%
+    \end{beamercolorbox}
+  \vfill
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cor
+
+\definecolor{Item}{RGB}{143,199,74}
+% Configurações
+\setbeamercolor*{title page header}{fg=black}
+\setbeamercolor*{author}{fg=black}
+\setbeamercolor*{date}{fg=black}
+\setbeamercolor*{frametitle}{fg=white}
+\setbeamercolor*{framesubtitle}{fg=white}
+\setbeamercolor*{item}{fg = Item}
+
+% Itens
+
+\setbeamertemplate{items}[square]
+\setbeamertemplate{sections/subsections in toc}[square]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fonte
+
+% Configurações
+\usefonttheme{professionalfonts}
+\setbeamerfont{title}{size = \huge}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{size=\large}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Externo
+
+% Fundo
+\setbeamertemplate{background}{
+  \ifnum\c@framenumber=1%Primeiro slide
+    \includegraphics[width=\paperwidth,height=\paperheight]{firstpage.png}
+  \else % Todos os demais slides
+    \includegraphics[width=\paperwidth,height=\paperheight]{background.png}
+  \fi
+}
+
+
+\setbeamertemplate{frametitle}{
+   % Sem titulo do frame em cima
+}
+
+\setbeamertemplate{footline}{%
+ \begin{beamercolorbox}[wd=9cm,ht=2.25ex,dp=1ex]{title in head/foot}%
+ \ifnum\c@framenumber>1
+ \color{white}
+ \hspace{5mm}
+ \ifx\insertframesubtitle\@empty 
+  {\large\insertframetitle\vspace{4mm}\hfill
+   \Tiny\insertframenumber/\inserttotalframenumber}
+  \else
+  {\large\insertframetitle\hfill
+   \Tiny\insertframenumber/\inserttotalframenumber\par\vspace{1mm}
+   \hspace{6mm}\normalsize\insertframesubtitle\vspace{1mm}}
+  \fi
+
+ \fi
+ \end{beamercolorbox}
+}
+
+\mode<all>
