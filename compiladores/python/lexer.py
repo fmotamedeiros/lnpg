@@ -13,7 +13,7 @@ tokens_da_linguagem = [
     (r'[0-9]+', 'DÍGITO'),
     (r'[;]', 'SEPARADOR')
 ]
-#EXPRESSÕES REGULARES acima!!!!
+#EXPRESSÕES REGULARES acima!
 
 def analise_lexica(programa, tokens_da_linguagem):
     posicao = 0

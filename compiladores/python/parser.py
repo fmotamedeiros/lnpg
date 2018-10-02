@@ -3,7 +3,7 @@ import sys
 class Token:
     def interpretar(self):
         return None
-#ABSTRAIR isso em cima. Tá complicado de entender...
+#ABSTRAIR isso em cima. Tá complicado ...
 
 class Atribuicao (Token):
 
