@@ -8,8 +8,12 @@ tokens_da_linguagem = [
     (r'[=]', 'IGUAL'),
     (r'[+]', 'SOMA'),
     (r'[-]', 'SUB'),
+    (r'[*]', 'MULT'),
+    (r'[/]', 'DIVI'),
+    (r'[0-9]+', 'DÍGITO'),
     (r'[;]', 'SEPARADOR')
 ]
+#EXPRESSÕES REGULARES acima!
 
 def analise_lexica(programa, tokens_da_linguagem):
     posicao = 0
@@ -34,6 +38,6 @@ def analise_lexica(programa, tokens_da_linguagem):
     return tokens_identificados
 
 
-code = 'A = B + C; C = B; A = B - C;'
-tokens = analise_lexica(code, tokens_da_linguagem)
-print(tokens)
+#code = 'A = B + C; C = B; A = B - C;'
+#tokens = analise_lexica(code, tokens_da_linguagem)
+#print(tokens)

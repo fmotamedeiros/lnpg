@@ -1,7 +1,7 @@
 from parser import analise_sintatica
 from lexer import analise_lexica, tokens_da_linguagem
 
-code = 'A = B + C; C = B; A = B - C;'
+code = 'A = 5 / 2; C = B; A = 22 - 313 ;'
 tokens = analise_lexica(code, tokens_da_linguagem)
 print(tokens)
 programa = analise_sintatica(tokens)
