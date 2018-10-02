@@ -1,0 +1,137 @@
+[33mcommit 5c591cac23322b846117afd0f45ed6a60d6105bd[m[33m ([m[1;36mHEAD -> [m[1;32mmelhora_lexer[m[33m, [m[1;31morigin/melhora_lexer[m[33m)[m
+Author: Jamile Lima <jamilesinfo@gmail.com>
+Date:   Tue Oct 2 15:17:15 2018 -0300
+
+    Teste commit 2 ... Sem paciência já.
+
+[33mcommit 6c1fb1ca2fa31225d64d035d65692799a2dd1fee[m
+Author: Jamile Lima <jamilesinfo@gmail.com>
+Date:   Tue Oct 2 14:22:05 2018 -0300
+
+    Fazendo meu teste de commit para meu primeiro post
+
+[33mcommit 10884699d943cc008dd5187cc3cc2119fd30e7d1[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Thu Sep 13 15:59:24 2018 -0300
+
+    Adicionando um exemplo de lexer e parser em Python
+
+[33mcommit da0c8cba5357656efabe87501a372ca029f934b4[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Mon Sep 10 16:12:31 2018 -0300
+
+    Reorganizando as pastas dos trabalhos.
+
+[33mcommit e696bf235f20eaf9c23980a4584ae02d0471eaf4[m
+Author: Filipe Esteves <filipe.esteves08@gmail.com>
+Date:   Fri Aug 31 13:49:26 2018 -0300
+
+    Adicionando o paradigma funcional
+
+[33mcommit 0364ff13310cf2bd6386683c135140bea06731d1[m
+Author: Filipe Esteves <filipe.esteves08@gmail.com>
+Date:   Fri Aug 31 13:43:55 2018 -0300
+
+    Delete modelo01.tex
+
+[33mcommit 18e9b384ef24010209967d074927e406eba1ebea[m
+Author: Filipe Esteves <filipe.esteves08@gmail.com>
+Date:   Fri Aug 31 13:43:45 2018 -0300
+
+    Delete modelo01.pdf
+
+[33mcommit c5d662f89cdbd0379ce82c7565227ef0a5d34a53[m
+Author: Filipe Esteves <filipe.esteves08@gmail.com>
+Date:   Fri Aug 31 13:43:37 2018 -0300
+
+    Delete Imagem3.png
+
+[33mcommit 0830d879fb9158f8a3ee719a898b6f6c1e94358d[m
+Author: Filipe Esteves <filipe.esteves08@gmail.com>
+Date:   Fri Aug 31 13:43:30 2018 -0300
+
+    Delete Imagem2.jpg
+
+[33mcommit db70a5ce6195b71b571e15991797864e83ebfabd[m
+Author: Filipe Esteves <filipe.esteves08@gmail.com>
+Date:   Fri Aug 31 13:43:22 2018 -0300
+
+    Delete Imagem1.jpg
+
+[33mcommit 7e737f6391c30b8b89074c111ba06e07d286f148[m
+Author: Filipe Esteves <filipe.esteves08@gmail.com>
+Date:   Fri Aug 31 13:42:25 2018 -0300
+
+    Add files via upload
+
+[33mcommit ed38bee420b074b693b336dfa8f66ef37df26ca5[m
+Author: Carlos Eduardo Felix Luciano <kdu.eduardo97@gmail.com>
+Date:   Thu Aug 30 22:05:10 2018 -0300
+
+    Add Paradigma Imperativo
+
+[33mcommit c267174255c6cba9a34c51149603978ac03b3df1[m
+Author: José Carlos <38336716+baphry@users.noreply.github.com>
+Date:   Thu Aug 30 15:25:42 2018 -0300
+
+    adicionando apresentação paradigma lógico
+
+[33mcommit c8e6e6068751d619e2e9130f5db0689f5a9e6170[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Wed Aug 29 14:49:24 2018 -0300
+
+    Adicionando o exemplo com orientação a aspectos.
+
+[33mcommit 47df5f3e3f70666af627ea50931dc010bfdbc009[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Mon Aug 27 16:39:21 2018 -0300
+
+    Adicionando o template da SBC.
+
+[33mcommit 9e03a63cd6e2b752496c34181d8caa49eb4ca36e[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Mon Aug 27 16:29:56 2018 -0300
+
+    Adicionando um exemplo de documento em Latex.
+
+[33mcommit b05708144dba61e635755dc4a9e6607dc3f7f355[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Mon Aug 27 16:27:53 2018 -0300
+
+    Adicionando modelos em latex para apresentação de slides.
+
+[33mcommit 8718d43dcb1fb5fbf8424bbaf899de2532082a2e[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Mon Aug 27 16:00:36 2018 -0300
+
+    Hello world em Haskell.
+
+[33mcommit 6cb9808f84d63ff58c1452cce333139379c4e4a1[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Mon Aug 27 15:58:41 2018 -0300
+
+    Adicionando exemplos de recursividade.
+
+[33mcommit b684ed83889cfba300dff3fa4635af39a43f6dfb[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Mon Aug 27 15:54:36 2018 -0300
+
+    Adicionando alguns exemplos em C e Haskell.
+
+[33mcommit bc79f21699d5713e6053ab449aebbae2f053feec[m
+Author: José Carlos <38336716+baphry@users.noreply.github.com>
+Date:   Tue Aug 21 01:00:40 2018 -0300
+
+    calculadora OO em php
+
+[33mcommit f3acfd2a410f7ada6c9e0557d900252674102109[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Thu Aug 16 20:23:03 2018 -0300
+
+    Adicionando a calculadora OO em Python.
+
+[33mcommit 711b5ebc702701706d614c6ab76be7046c949b50[m
+Author: fmotamedeiros <flaviomotamedeiros@gmail.com>
+Date:   Wed Aug 15 09:00:24 2018 -0300
+
+    Adicionando o projeto da calculadora na linguagem Python.
