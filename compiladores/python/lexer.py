@@ -1,5 +1,4 @@
-import sys
-import re
+import sys, re
 
 tokens_da_linguagem = [
     (r'[ \t\n]+', None),
@@ -8,6 +7,8 @@ tokens_da_linguagem = [
     (r'[=]', 'IGUAL'),
     (r'[+]', 'SOMA'),
     (r'[-]', 'SUB'),
+    (r'[*]', 'MULTIPLICACAO'),
+    (r'[/]', 'DIVISAO'),
     (r'[;]', 'SEPARADOR')
 ]
 

@@ -1,5 +1,5 @@
-from parser import analise_sintatica
-from lexer import analise_lexica, tokens_da_linguagem
+from parser import *
+from lexer import *
 
 code = 'A = B + C; C = B; A = B - C;'
 tokens = analise_lexica(code, tokens_da_linguagem)

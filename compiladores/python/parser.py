@@ -5,7 +5,6 @@ class Token:
         return None
 
 class Atribuicao (Token):
-
     def __init__(self, a, b, c, operacao):
         self.a = a
         self.b = b
@@ -26,11 +25,15 @@ def atribuicao (tokens, pos):
             if tokens[pos+2][1] == 'VAR' and tokens[pos+3][1] == 'SOMA' and tokens[pos+4][1] == 'VAR':
                 if tokens[pos+5][1] == 'SEPARADOR':
                     return ((pos+6), Atribuicao(tokens[pos][0], tokens[pos+2][0], tokens[pos+4][0], '+'))
-    if len(tokens) >= (pos+6):
-        if tokens[pos][1] == 'VAR' and tokens[pos+1][1] == 'IGUAL':
-            if tokens[pos+2][1] == 'VAR' and tokens[pos+3][1] == 'SUB' and tokens[pos+4][1] == 'VAR':
-                if tokens[pos+5][1] == 'SEPARADOR':
-                    return ((pos+6), Atribuicao(tokens[pos][0], tokens[pos+2][0], tokens[pos+4][0], '-'))
+                if tokens[pos+2][1] == 'VAR' and tokens[pos+3][1] == 'SUB' and tokens[pos+4][1] == 'VAR':
+                    if tokens[pos+5][1] == 'SEPARADOR':
+                        return ((pos+6), Atribuicao(tokens[pos][0], tokens[pos+2][0], tokens[pos+4][0], '-'))
+                if tokens[pos+2][1] == 'VAR' and tokens[pos+3][1] == 'MULTIPLICACAO' and tokens[pos+4][1] == 'VAR':
+                    if tokens[pos+5][1] == 'SEPARADOR':
+                        return ((pos+6), Atribuicao(tokens[pos][0], tokens[pos+2][0], tokens[pos+4][0], '*'))
+                if tokens[pos+2][1] == 'VAR' and tokens[pos+3][1] == 'DIVISAO' and tokens[pos+4][1] == 'VAR':
+                    if tokens[pos+5][1] == 'SEPARADOR':
+                        return ((pos+6), Atribuicao(tokens[pos][0], tokens[pos+2][0], tokens[pos+4][0], '/'))
     return (pos, None)
 
 def analise_sintatica(tokens):
