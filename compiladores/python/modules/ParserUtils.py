@@ -11,5 +11,5 @@ class Atribuicao (Token):
 
     def interpretar(self):
         if self.c:
-            return self.a + ' = ' + self.b + self.operacao + self.c + ';'
-        return self.a + ' = ' + self.b + ';'
+            return self.a + self.b + self.c +  self.operacao + ' = ' + ';'
+        return self.a + self.b + ' = ' + ';'

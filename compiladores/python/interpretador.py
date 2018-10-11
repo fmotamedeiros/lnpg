@@ -8,10 +8,10 @@ class Interpretador:
         self.run()
 
     def run(self):
-        tokens = self.analiseLexica.analise_lexica('A = B + C; C = B; A = B - C;')
-        print(tokens)
+        tokens = self.analiseLexica.analise_lexica('A = 5; B = A + 2;')
+        print tokens
         programa = self.parser.analise_sintatica(tokens)
-        print (programa)
+        print(programa)
         for token in programa:
             print(token.interpretar())
 

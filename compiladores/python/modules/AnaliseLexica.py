@@ -9,6 +9,7 @@ class AnaliseLexica:
             (r'[-]', 'SUB'),
             (r'[*]', 'MULTIPLICACAO'),
             (r'[/]', 'DIVISAO'),
+            (r'[0-9]+', 'NUM'),
             (r'[;]', 'SEPARADOR')
         ]
 
