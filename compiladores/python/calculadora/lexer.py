@@ -4,17 +4,20 @@ import re
 tokens_da_linguagem = [
     (r'[ \t\n]+', None),
     (r'#[^\n]*', None),
+    (r'[A|B|C]', 'VAR'),
+    (r'[0-9]+', 'DIGITO'),    
+    (r'[=]', 'IGUAL'),
     (r'[+]', 'SOMA'),
     (r'[-]', 'SUB'),
     (r'[*]', 'MULT'),
-    (r'[/]', 'DIVI'),
-    (r'[0-9]+', 'DÍGITO')
-]#EXPRESSÕES REGULARES acima!!!! Não precisa de separador porque só vamos usar uma expressão por vez. 
+    (r'[/]', 'DIV'),        
+    (r'[;]', 'SEPARADOR')
+]
 
-def analise_lexica(programa, tokens_da_linguagem): #1a variável for 'programa', a segunda vai receber token_da_liguagem
-    posicao = 0 #contador
-    tokens_identificados = [] #cria lista vazia
-    while posicao < len(programa): #"programa" aqui é a entrada lá no main, no caso será len para "expressao"
+def analise_lexica(programa,tokens_da_linguagem):
+    posicao = 0
+    tokens_identificados = []
+    while posicao < len(programa):
         match = None
         for token_da_linguagem in tokens_da_linguagem:
             padrao, identificador = token_da_linguagem
