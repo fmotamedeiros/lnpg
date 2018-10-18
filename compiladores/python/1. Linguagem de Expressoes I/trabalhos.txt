@@ -1,0 +1,11 @@
+Linguagem de Expressões I
+-------------------------
+A implementação atual inclui apenas constantes (valores) e operações sobre valores.
+São considerados apenas operações sobre números inteiros.
+
+
+Trabalhos Futuros
+-----------------
+
+Adicionar as operações de multiplicação e divisão, além da utilização de parenteses.
+Adicionar valores e operações sobre booleanos e string.

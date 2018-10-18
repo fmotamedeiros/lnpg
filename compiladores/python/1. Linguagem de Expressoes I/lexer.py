@@ -4,11 +4,9 @@ import re
 tokens_da_linguagem = [
     (r'[ \t\n]+', None),
     (r'#[^\n]*', None),
-    (r'[A|B|C]', 'VAR'),
+    (r'[0-9]+', 'DIGITO'),
     (r'[=]', 'IGUAL'),
-    (r'[+]', 'SOMA'),
-    (r'[-]', 'SUB'),
-    (r'[;]', 'SEPARADOR')
+    (r'[\+\-]', 'OPERADOR')
 ]
 
 def analise_lexica(programa, tokens_da_linguagem):
@@ -34,6 +32,6 @@ def analise_lexica(programa, tokens_da_linguagem):
     return tokens_identificados
 
 
-code = 'A = B + C; C = B; A = B - C;'
-tokens = analise_lexica(code, tokens_da_linguagem)
-print(tokens)
+#code = '3 + 5 + 8'
+#tokens = analise_lexica(code, tokens_da_linguagem)
+#print(tokens)
