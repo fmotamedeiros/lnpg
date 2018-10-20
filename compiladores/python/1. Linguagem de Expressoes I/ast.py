@@ -20,10 +20,6 @@ class Expressao (Construcao):
             return int(self.var1) + int(self.var2)
         elif self.operador == '-':
             return int(self.var1) - int(self.var2)
-        elif self.operador == '*':
-            return int(self.var1) * int(self.var2)
-        elif self.operador == '/':
-            return int(self.var1) / int(self.var2)
 
 class ExpressaoAdicional (Construcao):
     def __init__(self, var, resultado, operador):
@@ -39,7 +35,3 @@ class ExpressaoAdicional (Construcao):
             return int(self.resultado) + int(self.var)
         elif self.operador == '-':
             return int(self.resultado) - int(self.var)
-        elif self.operador == '*':
-            return int(self.resultado) * int(self.var)
-        elif self.operador == '/':
-            return int(self.resultado) / int(self.var)
