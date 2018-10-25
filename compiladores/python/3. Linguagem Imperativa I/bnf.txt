@@ -1,9 +1,13 @@
 <programa>          :-  <lista_instruções>
 <lista_instruções> 	:-  <instrução> ; <lista_instruções>
 			    		<instrução>
+						<def_funcao>
+<def_funcao>		:- <var>(){<lista_instruções>}
 <instrução>		    :-  <expressão>
 						<impressão>
+						<chamada_funcao>
 <impressão>			:-	imprimir(<var>)
+<chamada_funcao>	:- 	<var>()
 <expressão>			:- 	<var> = <expressão>
 						<var> + <var>
 						<var> - <var>
