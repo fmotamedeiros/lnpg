@@ -4,7 +4,7 @@ from parser import analise_sintatica
 from simbolos import tabela, adicionar, ler
 from ast import *
 
-code = 'A = 10; B = A + 2;'
+code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
 tokens = analise_lexica(code, tokens_da_linguagem)
 
 print(tokens)
@@ -14,11 +14,11 @@ print (programa)
 
 for construcao in programa:
     if construcao[1] == 'AtrSimples':
-        inicio = int(construcao[0][0])
+        inicio = int(construcao[0].split('-')[0])
         atrSimples = AtrSimples(tokens[inicio][0], tokens[inicio + 2][0])
         atrSimples.interpretar()
     if construcao[1] == 'Atr':
-        inicio = int(construcao[0][0])
+        inicio = int(construcao[0].split('-')[0])
         atr = Atr(
             tokens[inicio][0], 
             tokens[inicio + 2][0], 
@@ -26,5 +26,10 @@ for construcao in programa:
             tokens[inicio + 3][0]
         )
         atr.interpretar()
+    if construcao[1] == 'Imprimir':
+        inicio = int(construcao[0].split('-')[0])
+        imprimir = Imprimir(
+            tokens[inicio + 2][0]
+        )
+        imprimir.interpretar()
 
-print(tabela['B'])

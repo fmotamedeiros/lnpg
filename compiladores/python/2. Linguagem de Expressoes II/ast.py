@@ -44,3 +44,10 @@ class Atr (Construcao):
             return int(self.var2) * int(self.var3)
         elif self.operador == '/':
             return int(self.var2) / int(self.var3)
+
+class Imprimir (Construcao):
+    def __init__(self, var):
+        self.var = var
+
+    def interpretar(self):
+        print(tabela.get(self.var))

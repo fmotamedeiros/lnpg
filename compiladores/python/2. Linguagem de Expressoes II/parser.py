@@ -7,7 +7,8 @@ construcoes = [
     (['VAR', 'IGUAL', 'VAR', 'OPERADOR', 'VAR', 'SEPARADOR'], 'Atr'),
     (['VAR', 'IGUAL', 'DIGITO', 'OPERADOR', 'DIGITO', 'SEPARADOR'], 'Atr'),
     (['VAR', 'IGUAL', 'VAR', 'OPERADOR', 'DIGITO', 'SEPARADOR'], 'Atr'),
-    (['VAR', 'IGUAL', 'DIGITO', 'OPERADOR', 'VAR', 'SEPARADOR'], 'Atr')
+    (['VAR', 'IGUAL', 'DIGITO', 'OPERADOR', 'VAR', 'SEPARADOR'], 'Atr'),
+    (['IMPRIMIR', 'ABRIR', 'VAR', 'FECHAR', 'SEPARADOR'], 'Imprimir')
 ]
 
 def consumirTokens(tokens, pos):
@@ -36,7 +37,7 @@ def analise_sintatica(tokens):
             sys.exit(1)
     return programa
 
-#code = 'A = C + B; A = C;'
+#code = 'A = 10; imprimir(A);'
 #tokens = analise_lexica(code, tokens_da_linguagem)
 
 #print(tokens)
