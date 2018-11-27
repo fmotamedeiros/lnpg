@@ -7,10 +7,16 @@ from ast import *
 code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
 tokens = analise_lexica(code, tokens_da_linguagem)
 
+print('\n\n\n')
+
 print(tokens)
+
+print('\n\n\n')
 
 programa = analise_sintatica(tokens)
 print (programa)
+
+print('\n\n\n')
 
 for construcao in programa:
     if construcao[1] == 'AtrSimples':
