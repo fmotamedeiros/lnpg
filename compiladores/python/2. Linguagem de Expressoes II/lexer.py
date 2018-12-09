@@ -5,6 +5,7 @@ tokens_da_linguagem = [
     (r'[ \t\n]+', None),
     (r'#[^\n]*', None),
     (r'[i][m][p][r][i][m][i][r]', 'IMPRIMIR'),
+    (r'[t][a][m][a][n][h][o]', 'TAMANHO'),
     (r'[A-Za-z]+', 'VAR'),
     (r'[0-9]+', 'DIGITO'),
     (r'[=]', 'IGUAL'),
@@ -15,6 +16,7 @@ tokens_da_linguagem = [
     (r'[{]', 'ABRELISTA'),
     (r'[}]', 'FECHALISTA'),
     (r'[,]', 'SEPARALISTA')
+    
 ]
 
 def analise_lexica(programa, tokens_da_linguagem):

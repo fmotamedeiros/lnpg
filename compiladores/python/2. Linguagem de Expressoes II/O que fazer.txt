@@ -1,8 +1,8 @@
 Adicionar a estrutura de dados lista
 
-1. Permitir que o programador crie listas de números inteiros
+1. Permitir que o programador crie listas de nï¿½meros inteiros OK
 2. Programador precisa adicionar, remover e atualizar elementos da lista
-3. Informar o tamanho da lista - função: tamanho(nome_da_lista)
+3. Informar o tamanho da lista - funï¿½ï¿½o: tamanho(nome_da_lista) OK
 4. Permitir percorrer a lista (FOREACH)
 
 x = [2, 3, 5]

@@ -4,8 +4,8 @@ from parser import analise_sintatica
 from simbolos import tabela, adicionar, ler
 from ast import *
 
-code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
-#code = 'A = {2, 3};'
+#code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
+code = 'A = {3, 1}; B = {5, 2}; imprimir(A); tamanho(B);'
 tokens = analise_lexica(code, tokens_da_linguagem)
 
 print('\n\n\n')
@@ -33,6 +33,14 @@ for construcao in programa:
             tokens[inicio + 3][0]
         )
         atr.interpretar()
+    if construcao[1] == 'Lista':
+        inicio = int(construcao[0].split('-')[0])
+        lista = Lista(tokens[inicio][0], tokens[inicio + 3][0], tokens[inicio + 5][0])
+        lista.interpretar()
+    if construcao[1] == 'Tamanho':
+        inicio = int(construcao[0].split('-')[0])
+        lista = TamanhoLista(tokens[inicio + 2][0])
+        lista.interpretar()
     if construcao[1] == 'Imprimir':
         inicio = int(construcao[0].split('-')[0])
         imprimir = Imprimir(
