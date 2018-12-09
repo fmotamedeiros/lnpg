@@ -5,6 +5,7 @@ from simbolos import tabela, adicionar, ler
 from ast import *
 
 code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
+#code = 'A = {2, 3};'
 tokens = analise_lexica(code, tokens_da_linguagem)
 
 print('\n\n\n')

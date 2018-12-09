@@ -13,7 +13,8 @@ tokens_da_linguagem = [
     (r'[(]', 'ABRIR'),
     (r'[)]', 'FECHAR'),
     (r'[{]', 'ABRELISTA'),
-    (r'[}]', 'FECHALISTA')
+    (r'[}]', 'FECHALISTA'),
+    (r'[,]', 'SEPARALISTA')
 ]
 
 def analise_lexica(programa, tokens_da_linguagem):
