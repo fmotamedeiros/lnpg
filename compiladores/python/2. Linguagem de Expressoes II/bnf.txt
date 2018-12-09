@@ -1,0 +1,16 @@
+<programa>          :-  <lista_instruções>
+<lista_instruções> 	:-  <instrução> ; <lista_instruções>
+			    		<instrução>
+<instrução>		    :-  <expressão>
+						<impressão>
+<impressão>			:-	imprimir(<var>)
+<expressão>			:- 	<var> = <expressão>
+						<var> + <var>
+						<var> - <var>
+						<var> * <var>
+						<var> / <var>
+						<var>
+<var>				:- 	A-Za-z
+			| 			<dígito>
+<dígito>			:- 	0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+						<dígito><dígito>

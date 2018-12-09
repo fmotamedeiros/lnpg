@@ -1,0 +1,10 @@
+Linguagem de Expressões II
+--------------------------
+A implementação atual inclui constantes (valores), variáveis e operações sobre as mesmas.
+São considerados apenas operações sobre números inteiros.
+
+
+Trabalhos Futuros
+-----------------
+
+Adicionar tipos de dados e operações sobre decimais, booleanos e string.
