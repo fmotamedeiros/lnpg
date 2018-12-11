@@ -1,11 +1,12 @@
 import sys
+import re
 from lexer import analise_lexica, tokens_da_linguagem
 from parser import analise_sintatica
-from simbolos import tabela, adicionar, ler
+from simbolos import tabela, adicionar, ler, remover
 from ast import *
 
 #code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
-code = 'A = {3, 1}; B = {5, 2}; imprimir(A); tamanho(B);'
+code = 'A = [3, 15]; B = [2, 3]; imprimir(A); remover(A,0); imprimir(A);'
 tokens = analise_lexica(code, tokens_da_linguagem)
 
 print('\n\n\n')
@@ -18,6 +19,8 @@ programa = analise_sintatica(tokens)
 print (programa)
 
 print('\n\n\n')
+
+pattern_int = re.compile(r'[0-9]+')
 
 for construcao in programa:
     if construcao[1] == 'AtrSimples':
@@ -35,8 +38,19 @@ for construcao in programa:
         atr.interpretar()
     if construcao[1] == 'Lista':
         inicio = int(construcao[0].split('-')[0])
-        lista = Lista(tokens[inicio][0], tokens[inicio + 3][0], tokens[inicio + 5][0])
+        idlista = tokens[inicio][0]
+        elementos = []
+        elemento1 = tokens[inicio + 3][0]
+        elemento2 = tokens[inicio + 5][0]            
+
+            #print(pattern_int.findall(code))
+            #         
+        lista = Lista(idlista, elemento1, elemento2)
         lista.interpretar()
+    if construcao[1] == 'Remover':
+        inicio = int(construcao[0].split('-')[0])
+        remover = Remover(tokens[inicio + 2][0], tokens[inicio + 4][0])
+        remover.interpretar()
     if construcao[1] == 'Tamanho':
         inicio = int(construcao[0].split('-')[0])
         lista = TamanhoLista(tokens[inicio + 2][0])

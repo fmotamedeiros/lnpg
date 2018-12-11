@@ -6,6 +6,7 @@ tokens_da_linguagem = [
     (r'#[^\n]*', None),
     (r'[i][m][p][r][i][m][i][r]', 'IMPRIMIR'),
     (r'[t][a][m][a][n][h][o]', 'TAMANHO'),
+    (r'[r][e][m][o][v][e][r]', 'REMOVER'),
     (r'[A-Za-z]+', 'VAR'),
     (r'[0-9]+', 'DIGITO'),
     (r'[=]', 'IGUAL'),
@@ -13,8 +14,8 @@ tokens_da_linguagem = [
     (r'[;]', 'SEPARADOR'),
     (r'[(]', 'ABRIR'),
     (r'[)]', 'FECHAR'),
-    (r'[{]', 'ABRELISTA'),
-    (r'[}]', 'FECHALISTA'),
+    (r'[[]', 'ABRELISTA'),
+    (r'[]]', 'FECHALISTA'),
     (r'[,]', 'SEPARALISTA')
     
 ]

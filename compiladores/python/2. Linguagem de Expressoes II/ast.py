@@ -1,7 +1,9 @@
 import sys
 from lexer import analise_lexica, tokens_da_linguagem
 from parser import analise_sintatica
-from simbolos import tabela, adicionar, ler
+from simbolos import tabela, adicionar, ler, remover
+
+listaGeral = []
 
 class Construcao:
   def interpretar(self):
@@ -59,6 +61,14 @@ class Lista (Construcao):
         if aux3:
             self.var3 = aux3
         adicionar(self.var1, [self.var2, self.var3])
+
+class Remover (Construcao):
+    def __init__(self, var1, var2):
+        self.var1 = var1
+        self.var2 = var2
+
+    def interpretar(self):
+        remover(self.var1, self.var2)
 
 class TamanhoLista (Construcao):
     def __init__(self, var):
