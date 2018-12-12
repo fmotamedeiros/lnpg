@@ -6,7 +6,7 @@ from simbolos import tabela, adicionar, ler, remover
 from ast import *
 
 #code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
-code = 'A = [1, 3, 5]; imprimir(A); B = [5, 62]; imprimir(B); remover(A, 3); imprimir(A);'
+code = 'A = [1, 3, 5]; imprimir(A); tamanho(A); remover(A, 1); imprimir(A); tamanho(A);'
 tokens = analise_lexica(code, tokens_da_linguagem)
 
 print('\n\n\n')
@@ -19,8 +19,6 @@ programa = analise_sintatica(tokens)
 print (programa)
 
 print('\n\n\n')
-
-pattern_int = re.compile(r'[0-9]+')
 
 for construcao in programa:
     if construcao[1] == 'AtrSimples':
@@ -39,24 +37,21 @@ for construcao in programa:
     if construcao[1] == 'Lista':
         inicio = int(construcao[0].split('-')[0])
         idlista = tokens[inicio][0]
-        elementos = []
+        #elementos = []
         elemento1 = tokens[inicio + 3][0]
         elemento2 = tokens[inicio + 5][0]            
 
-            #print(pattern_int.findall(code))
-            #         
         lista = Lista(idlista, elemento1, elemento2)
         lista.interpretar()
     if construcao[1] == 'Listade3':
+        contador = 0
         inicio = int(construcao[0].split('-')[0])
         idlista = tokens[inicio][0]
-        elementos = []
+        #elementos = []
         elemento1 = tokens[inicio + 3][0]
         elemento2 = tokens[inicio + 5][0]
-        elemento3 = tokens[inicio + 7][0]             
+        elemento3 = tokens[inicio + 7][0]   
 
-            #print(pattern_int.findall(code))
-            #         
         lista = Listade3(idlista, elemento1, elemento2, elemento3)
         lista.interpretar()
     if construcao[1] == 'Remover':
