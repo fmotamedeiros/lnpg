@@ -6,7 +6,7 @@ from simbolos import tabela, adicionar, ler, remover
 from ast import *
 
 #code = 'A = 10; B = A + 2; imprimir(A); imprimir(B);'
-code = 'A = [3, 15]; B = [2, 3]; imprimir(A); remover(A,0); imprimir(A);'
+code = 'A = [1, 3, 5]; imprimir(A); B = [5, 62]; imprimir(B); remover(A, 3); imprimir(A);'
 tokens = analise_lexica(code, tokens_da_linguagem)
 
 print('\n\n\n')
@@ -46,6 +46,18 @@ for construcao in programa:
             #print(pattern_int.findall(code))
             #         
         lista = Lista(idlista, elemento1, elemento2)
+        lista.interpretar()
+    if construcao[1] == 'Listade3':
+        inicio = int(construcao[0].split('-')[0])
+        idlista = tokens[inicio][0]
+        elementos = []
+        elemento1 = tokens[inicio + 3][0]
+        elemento2 = tokens[inicio + 5][0]
+        elemento3 = tokens[inicio + 7][0]             
+
+            #print(pattern_int.findall(code))
+            #         
+        lista = Listade3(idlista, elemento1, elemento2, elemento3)
         lista.interpretar()
     if construcao[1] == 'Remover':
         inicio = int(construcao[0].split('-')[0])

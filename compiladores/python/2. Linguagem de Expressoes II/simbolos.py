@@ -7,7 +7,8 @@ def tamanho(nome):
     return len(tabela[nome])
 
 def remover(nome, valor):
-    print(tabela[nome])
+    listaAntiga = tabela[nome]
+    listaAntiga.remove(valor)
 
 def ler(nome):
     return tabela[nome]

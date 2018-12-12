@@ -62,6 +62,25 @@ class Lista (Construcao):
             self.var3 = aux3
         adicionar(self.var1, [self.var2, self.var3])
 
+class Listade3 (Construcao):
+    def __init__(self, var1, var2, var3, var4):
+        self.var1 = var1
+        self.var2 = var2
+        self.var3 = var3
+        self.var4 = var4
+
+    def interpretar(self):
+        aux2 = tabela.get(self.var2)
+        aux3 = tabela.get(self.var3)
+        aux4 = tabela.get(self.var4)
+        if aux2:
+            self.var2 = aux2
+        if aux3:
+            self.var3 = aux3
+        if aux4:
+            self.var4 = aux4
+        adicionar(self.var1, [self.var2, self.var3, self.var4])
+
 class Remover (Construcao):
     def __init__(self, var1, var2):
         self.var1 = var1

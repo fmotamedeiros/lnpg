@@ -10,6 +10,7 @@ construcoes = [
     (['VAR', 'IGUAL', 'DIGITO', 'OPERADOR', 'VAR', 'SEPARADOR'], 'Atr'),
     (['IMPRIMIR', 'ABRIR', 'VAR', 'FECHAR', 'SEPARADOR'], 'Imprimir'),
     (['VAR', 'IGUAL', 'ABRELISTA', 'DIGITO', 'SEPARALISTA', 'DIGITO', 'FECHALISTA', 'SEPARADOR'], 'Lista'),
+    (['VAR', 'IGUAL', 'ABRELISTA', 'DIGITO', 'SEPARALISTA', 'DIGITO', 'SEPARALISTA', 'DIGITO', 'FECHALISTA', 'SEPARADOR'], 'Listade3'),
     (['TAMANHO', 'ABRIR', 'VAR', 'FECHAR', 'SEPARADOR'], 'Tamanho'),
     (['REMOVER', 'ABRIR', 'VAR', 'SEPARALISTA', 'DIGITO', 'FECHAR', 'SEPARADOR'], 'Remover')
 ]
@@ -17,8 +18,8 @@ construcoes = [
 def consumirTokens(tokens, pos):
     indice = pos
     for construcao in construcoes:
-        for token in construcao[0]:
-            if token != tokens[indice][1]:
+        for token in construcao[0]: 
+            if token != tokens[indice][1]:                             
                 indice = pos
                 break
             else:
