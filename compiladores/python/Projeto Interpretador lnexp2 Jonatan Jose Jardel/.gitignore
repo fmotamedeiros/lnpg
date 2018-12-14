@@ -1,0 +1,7 @@
+__pycache__/
+ast.pyc
+lexer.pyc
+parser.pyc
+simbolos.pyc
+bnf.txt
+trabalhos.txt
